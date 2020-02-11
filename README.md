@@ -32,4 +32,11 @@ force user = nobody
 mkdir -p /media/samba/anonymous
 chmod 755 /media/samba/anonymous
 chown -R nobody:nogroup  /media/samba/anonymous
+
+# Check the sharing
+smbtree
+
+# Mount a sharing
+mkdir -p /tmp/toto
+mount -t cifs -o guest //myserver/Anonymous /tmp/toto
 ```
