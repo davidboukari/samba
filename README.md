@@ -7,7 +7,7 @@
 $ apt-get install -y samba samba-common system-config-samba
 
 #**********************************************
-#Add on /etc/smb.conf
+#Add on /etc/samba/smb.conf
 #**********************************************
 [global]
 workgroup = WORKGROUP
