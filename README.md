@@ -34,7 +34,7 @@ chmod 755 /media/samba/anonymous
 chown -R nobody:nogroup  /media/samba/anonymous
 
 # Check the sharing
-smbtree
+smbtree -v
 
 # Mount a sharing
 mkdir -p /tmp/toto
