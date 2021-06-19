@@ -40,3 +40,8 @@ smbtree -v
 mkdir -p /tmp/toto
 mount -t cifs -o guest //myserver/Anonymous /tmp/toto
 ```
+
+# Password does not expire 
+```
+samba-tool user setexpiry Administrator --noexpiry
+```
