@@ -45,3 +45,15 @@ mount -t cifs -o guest //myserver/Anonymous /tmp/toto
 ```
 samba-tool user setexpiry Administrator --noexpiry
 ```
+# Samba
+```
+smbclient -A /etc/samba/smb.conf -L localhost
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	impression      Disk
+	IPC$            IPC       IPC Service 
+SMB1 disabled -- no workgroup available
+
+```
